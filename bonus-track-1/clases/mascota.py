@@ -1,6 +1,3 @@
-from pyclbr import Class
-
-
 class Mascota:
     def __init__(self, nombre, edad, salud, precio):
         self.nombre = nombre
