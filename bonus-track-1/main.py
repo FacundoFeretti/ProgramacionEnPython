@@ -34,7 +34,7 @@ def registrar_cliente():
     cliente = Cliente(nombre, direccion, telefono)
     return cliente
 
-def registar_producto():
+def registrar_producto():
     nombre = input("Nombre del producto: ")
     categoria = input("Categoria del producto: ")
     precio =  float(input("Precio del producto: "))
@@ -74,7 +74,7 @@ def mostrar_menu():
     print('2. Registrar Cliente')
     print('3. Registrar Producto')
     print('4. Registrar Venta')
-    print('5. Mostar Informacion acerca de Mascota')
+    print('5. Mostrar Informacion acerca de Mascota')
     print('6. Mostrar Informacion acerca de Clientes')
     print('7. Mostar informacion acerca de Productos')
     print('8. Generar alerta de inventario')
@@ -100,7 +100,7 @@ def main():
                 clientes.append(cliente)
                 print('Cliente registrado con exito!')
         elif opcion == '3':
-            producto = registar_producto()
+            producto = registrar_producto()
             if producto:
                 inventario.agregar_producto(producto)
                 print("Producto registrado con exito!")
